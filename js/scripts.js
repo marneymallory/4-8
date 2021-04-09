@@ -26,41 +26,25 @@ Pizza.prototype.pizzaPrice = function () {
       price += 1.0;
     }
   } else {
-    this.toppings = "none";
+    this.toppings = "";
   }
-  this.cost = costFormatter.format(cost);
-  return this.cost;
-};
+  this.price = costFormatter.format(price);
+  return this.price;
+  };
+
 
 // constructor. 
 // will make properites for toppings and size
 // make formula to determine price
 // work on jquery to link up business and UI. Google Template literals. 
-// done lol. 
 
 
-
-function pizzaChoice(price) {
-  let output= ("");
-  for(let i=0; i<=number; i++) {
-    if(i.toString().split("").includes()){
-      output += "Won't you be my neighbor?"
-     } else if (i.toString().split("").includes("1")){
-      output += "BEEP!"
-     } else if(i.toString().split("").includes("2")){
-      output += "BOOP!"
-    } else {
-      output += i 
-    }
-  } 
-  return output 
-
-}
 
 $(document).ready(function () {
-  $("#example-form").submit(function (event) {
+  $("#pizza-choice").submit(function (event) {
     event.preventDefault();
-  });
+   
+    });
 });
 
 
