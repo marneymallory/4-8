@@ -2,15 +2,30 @@ let pizza = {
   toppings: ['cheese', 'pepperoni', 'sausage', 'artichoke hearts', 'basil'],
   size: ['small', 'medium', 'large'],
 }
-functionPizza(toppings, size, price) {
+let price={}
+
+functionPizza(toppings, size); {
 this.toppings = toppings
 this.size = size
-this.price = price 
 }
 Pizza.prototype.pizzaChoice = function() {
  let pizzaPrice = 10;
 }
-return pizzaPrice 
+function pizzaChoice(price) {
+  let output= ("");
+  for(let i=0; i<=number; i++) {
+    if(i.toString().split("").includes()){
+      output += "Won't you be my neighbor?"
+     } else if (i.toString().split("").includes("1")){
+      output += "BEEP!"
+     } else if(i.toString().split("").includes("2")){
+      output += "BOOP!"
+    } else {
+      output += i 
+    }
+  } 
+  return output 
+
 
 
 $(document).ready(function () {
