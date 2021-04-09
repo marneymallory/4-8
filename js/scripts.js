@@ -2,7 +2,15 @@ let pizza = {
   toppings: ['cheese', 'pepperoni', 'sausage', 'artichoke hearts', 'basil'],
   size: ['small', 'medium', 'large'],
 }
-functionPizza(toppings, size, price)
+functionPizza(toppings, size, price) {
+this.toppings = toppings
+this.size = size
+this.price = price 
+}
+Pizza.prototype.pizzaChoice = function() {
+ let pizzaPrice = 10;
+}
+return pizzaPrice 
 
 
 $(document).ready(function () {

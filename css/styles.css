@@ -2,6 +2,6 @@ body {
   background-color: rgb(243, 133, 38);
   text-align: center
 }
-body, h1, h2 {
+body, h1, h2, h3, h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
