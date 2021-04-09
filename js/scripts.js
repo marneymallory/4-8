@@ -2,15 +2,44 @@ let pizza = {
   toppings: ['cheese', 'pepperoni', 'sausage', 'artichoke hearts', 'basil'],
   size: ['small', 'medium', 'large'],
 }
-let price={}
 
-functionPizza(toppings, size); {
+function Pizza(toppings, size) {
 this.toppings = toppings
 this.size = size
 }
-Pizza.prototype.pizzaChoice = function() {
- let pizzaPrice = 10;
-}
+
+Pizza.prototype.pizzaPrice = function () {
+  let costFormatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+  let price = 10.0;
+  if (this.size === "large") {
+    price += 5.0;
+  } else if (this.size === "medium") {
+    price += 3.0;
+  }
+  if (this.toppings) {
+    if (this.toppings.length >= 4) {
+      price += 2.0;
+    } else if (this.toppings.length >= 2) {
+      price += 1.0;
+    }
+  } else {
+    this.toppings = "none";
+  }
+  this.cost = costFormatter.format(cost);
+  return this.cost;
+};
+
+// constructor. 
+// will make properites for toppings and size
+// make formula to determine price
+// work on jquery to link up business and UI. Google Template literals. 
+// done lol. 
+
+
+
 function pizzaChoice(price) {
   let output= ("");
   for(let i=0; i<=number; i++) {
@@ -26,7 +55,7 @@ function pizzaChoice(price) {
   } 
   return output 
 
-
+}
 
 $(document).ready(function () {
   $("#example-form").submit(function (event) {
