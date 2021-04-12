@@ -1,7 +1,6 @@
-let pizza = {
-  toppings: ['cheese', 'pepperoni', 'sausage', 'artichoke hearts', 'basil'],
-  size: ['small', 'medium', 'large'],
-}
+// -define prices for each size pizza
+// -add base price for 3 toppings and make additional toppings cost .50
+// -return pizzaPrice based on topping/size parameters
 
 function Pizza(toppings, size) {
 this.toppings = toppings
@@ -9,45 +8,38 @@ this.size = size
 }
 
 Pizza.prototype.pizzaPrice = function () {
-  let costFormatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  });
-  let price = 10.0;
+  let price;
+
   if (this.size === "large") {
-    price += 5.0;
+    price = 20.0;
   } else if (this.size === "medium") {
-    price += 3.0;
+    price = 15.0;
+  } else if (this.size === "small") {
+    price = 10.0
   }
+
   if (this.toppings) {
-    if (this.toppings.length >= 4) {
-      price += 2.0;
-    } else if (this.toppings.length >= 2) {
-      price += 1.0;
+    this.toppings.forEach(function() {
+      price += .50;
     }
-  } else {
-    this.toppings = "";
-  }
-  this.price = costFormatter.format(price);
-  return this.price;
-  };
+  )}
+  return price;
+};
 
-
-// constructor. 
-// will make properites for toppings and size
-// make formula to determine price
-// work on jquery to link up business and UI. Google Template literals. 
-
-
-
-$(document).ready(function () {
-  $("#pizza-choice").submit(function (event) {
-    event.preventDefault();
-   
+{/* <script>
+    $(document).ready(function () {
+        $('.radio-option').click(function () {
+            $(this).not(this).removeClass('click');
+            $(this).toggleClass("click");
+            event.preventDefault();
+</script>
+        });
     });
-});
 
 
+
+
+// $("#pizza-choice").submit(function (event) { */}
 
 // // Create a website for a pizza company where a user can choose one or 
 // more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and 
