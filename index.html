@@ -6,6 +6,7 @@
   type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
+  <link href="path/to/multiselect.css" media="screen" rel="stylesheet" type="text/css">
   <meta charset="UTF-8">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,22 +28,14 @@
     <form id="pizza-choice">
       <div class="form-group"></div>
         <h3>Toppings</h3>
-      <ul>
-        <li><div class="radio-option">Cheese</div></li>
-        <li><div class="radio-option">Pepperoni</div></li>
-        <li><div class="radio-option">Sausage</div></li>
-        <li><div class="radio-option">Mushrooms</div></li>
-        <li><div class="radio-option">Olives</div></li>
-        <!-- <select multiple="multiple" id="myMulti">
-                style="width:150px;">
-            <option>Cheese</option> 
-            <option>Pepperoni</option> 
-            <option>Sausage</option> 
-            <option>Artichoke Hearts</option> 
-            <option>Basil</option> 
-            <option>Mushrooms</option>
-        </select> -->
-        <h4>Size</h4>
+        <select multiple="multiple" id="my-select" name="my-select[]">
+          <option value="cheese">Cheese</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="sausage">Sausage</option>
+          <option value="mushrooms">Mushrooms</option>
+          <option value="olives">Olives</option>
+        </select>
+      <h4>Size</h4>
         <select class="custom-select" 
                 style="width:150px;">
             <option>Small</option>
@@ -55,6 +48,7 @@
         </div>
      </form>
      <div id="output"></div>
+     <script src="path/to/jquery.multi-select.js" type="text/javascript"></script>
 
 </body>
 </html>

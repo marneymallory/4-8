@@ -7,22 +7,16 @@ README.md
 By: Marney Mallory
 
 ### Specs
-Describe: looperDooper()
-Test: "It should return an array from 0- user inputted number."
-Code: looperDoooper(4);
-Expected Output: 1, 2, 3, 4
-
-Test: Numbers that contain a 3 will replace all digits with "Won't you be my neighbor?"
-Code: looperDooper(3)
-Expected Output: 1, 2, "Won't you be my neighbor?"
-
-Test: Numbers that contain a 2 will replace all digits with "BOOP!"
-Code: looperDooper(2)
-Expected Output: 1, "BOOP!"
-
-Test: It should replace any numbers containing a 1 with a "BEEP!" if there is no 2 or 3 present. 
-Code: looperDooper(13)
-Expected Output: "BEEP!", "BOOP!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "BEEP!", "BOOP!", "Won't you be my neighbor?"
+Describe: Pizza()
+Test: Pizza is created when passed expected arguments.
+Code: new Pizza(["sausage"], "small")
+Expected Output:
+                size: "small"
+                toppings: ["sausage"]
+Descripe: pizzaPrice()
+Test: When calling pizzaPrice on specific pizza, price will be returned. 
+Code: new Pizza(["pepperoni"], "medium").pizzaPrice
+Expected Output: 15.50
 
 
 
@@ -45,7 +39,8 @@ Open 'index.html' in Chrome or preferred browser
 To see my live website go to `https://marneymallory.github.io/4-8/)`
 
 ### Known Bugs:
-- No known bugs
+Could not figure out how to create multi-select dropdown;
+UI logic is missing
 
 ### Support and contact details:
 Please reach out through my GitHub account.
