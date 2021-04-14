@@ -20,11 +20,22 @@ Pizza.prototype.pizzaPrice = function () {
       price += .50;
     }
   )}
+
   return price;
+  
 };
 
 $(document).ready(function () {
-  $("#example-form").submit(function (event) {
+  $("#pizza-choice").submit(function (event) {
     event.preventDefault();
-  })
+    let valToppings = [];
+    let pizzaOrder = new Pizza(valToppings, size)
+    $("#submit").click(function(){
+      $(":checkbox:checked").each(function(i){
+        valToppings[i] = $(this).val();
+        const size = $("#size").val();
+      $("#output").text(price)
+      });
+    });
+  });
 });

@@ -26,18 +26,22 @@
     <p>You're just two steps away from the pizza of your dreams! <br>
       Select toppings and size here. </p>
     <form id="pizza-choice">
-      <div class="form-group"></div>
+      <div class="form-group">
+      </div>
         <h3>Toppings</h3>
-        <select multiple="multiple" id="my-select" name="my-select[]">
-          <option value="cheese">Cheese</option>
-          <option value="pepperoni">Pepperoni</option>
-          <option value="sausage">Sausage</option>
-          <option value="mushrooms">Mushrooms</option>
-          <option value="olives">Olives</option>
-        </select>
+        <input name="selector[]" id="ad_Checkbox1" class="ads_Checkbox" type="checkbox" value="1" />
+        <label for="ad_Checkbox1">Cheese</label>
+        <input name="selector[]" id="ad_Checkbox2" class="ads_Checkbox" type="checkbox" value="2" />
+        <label for="ad_Checkbox2">Pepperoni</label>
+        <input name="selector[]" id="ad_Checkbox3" class="ads_Checkbox" type="checkbox" value="3" />
+        <label for="ad_Checkbox3">Sausage</label>
+        <input name="selector[]" id="ad_Checkbox4" class="ads_Checkbox" type="checkbox" value="4" />
+        <label for="ad_Checkbox4">Mushrooms</label>
+        <input name="selector[]" id="ad_Checkbox5" class="ads_Checkbox" type="checkbox" value="5" />
+        <label for="ad_Checkbox5">Olives</label>
       <h4>Size</h4>
         <select class="custom-select" 
-                style="width:150px;">
+        style="width:150px;" id="size">
             <option>Small</option>
             <option>Medium</option>
             <option>Large</option>
