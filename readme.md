@@ -39,8 +39,7 @@ Open 'index.html' in Chrome or preferred browser
 To see my live website go to `https://marneymallory.github.io/4-8/)`
 
 ### Known Bugs:
-Could not figure out how to create multi-select dropdown;
-UI logic is missing
+Could not get form to submit
 
 ### Support and contact details:
 Please reach out through my GitHub account.
