@@ -8,7 +8,7 @@ By: Marney Mallory
 
 ### Specs
 Describe: Pizza()
-Test: Pizza is created when passed expected arguments.
+Test: Pizza is created when passed expected   arguments.
 Code: new Pizza(["sausage"], "small")
 Expected Output:
                 size: "small"
@@ -39,7 +39,7 @@ Open 'index.html' in Chrome or preferred browser
 To see my live website go to `https://marneymallory.github.io/4-8/)`
 
 ### Known Bugs:
-Could not get form to submit
+No known bugs
 
 ### Support and contact details:
 Please reach out through my GitHub account.
